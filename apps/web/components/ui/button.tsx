@@ -20,9 +20,10 @@ type LinkProps = CommonProps &
   };
 
 const styles = {
-  solid: "bg-blush-600 text-white shadow-soft hover:-translate-y-0.5 hover:bg-blush-700 hover:shadow-lift",
-  outline: "border border-white/20 bg-white/85 text-ink hover:border-sun-300 hover:bg-white",
-  ghost: "bg-transparent text-ink hover:bg-white/50",
+  solid:
+    "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/20 hover:-translate-y-0.5 hover:shadow-blue-500/30",
+  outline: "border border-slate-200 bg-white/85 text-slate-700 hover:border-blue-300 hover:bg-white hover:text-blue-700",
+  ghost: "bg-transparent text-slate-700 hover:bg-slate-100",
 };
 
 export function Button(props: ButtonProps | LinkProps) {
@@ -43,7 +44,7 @@ export function Button(props: ButtonProps | LinkProps) {
 
   const { children, className, variant = "solid", ...rest } = props;
   const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-sun-300 focus:ring-offset-2",
+    "inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
     styles[variant],
     className,
   );

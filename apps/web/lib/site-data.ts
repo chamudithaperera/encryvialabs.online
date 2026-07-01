@@ -14,18 +14,16 @@ import {
 
 export const site = {
   name: "Encryvia Labs",
-  tagline: "Protect and power your digital business today.",
+  tagline: "Innovative Digital Solutions",
   description:
-    "Encryvia Labs designs and builds modern websites, software platforms, mobile apps, cloud systems, secure databases, and AI-powered solutions for ambitious businesses.",
+    "Encryvia Labs - Modern technology solutions for businesses. We build high-quality websites, custom software, mobile apps, SaaS platforms, and AI-powered solutions.",
 };
 
 export const navLinks = [
-  { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case Studies" },
-  { href: "/about", label: "About" },
-  { href: "/careers", label: "Careers" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#services", label: "Services" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export const trustBullets = [
