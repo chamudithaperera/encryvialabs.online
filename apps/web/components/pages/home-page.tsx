@@ -32,7 +32,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type ScrollResult<T extends HTMLElement> = {
-  ref: RefObject<T>;
+  ref: RefObject<T | null>;
   isVisible: boolean;
 };
 
@@ -429,7 +429,7 @@ export function HomePage() {
                           <span className="text-cyan-400">project</span>
                           <span className="text-slate-500">.</span>
                           <span className="text-white">launch</span>
-                          <span className="text-slate-500">("web", "mobile", "ai")</span>
+                          <span className="text-slate-500">{"\"web\", \"mobile\", \"ai\""}</span>
                         </span>
                       </div>
                       <div className="flex items-start gap-3">
@@ -438,14 +438,14 @@ export function HomePage() {
                           <span className="text-cyan-400">design</span>
                           <span className="text-slate-500">.</span>
                           <span className="text-white">system</span>
-                          <span className="text-slate-500">("bolt", "responsive", "accessible")</span>
+                          <span className="text-slate-500">{"\"bolt\", \"responsive\", \"accessible\""}</span>
                         </span>
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="select-none text-slate-500">3</span>
                         <span>
                           <span className="text-emerald-400">deploy</span>
-                          <span className="text-slate-500">("fast", "secure", "measurable")</span>
+                          <span className="text-slate-500">{"\"fast\", \"secure\", \"measurable\""}</span>
                         </span>
                       </div>
                       <div className="flex items-start gap-3 pt-2">
