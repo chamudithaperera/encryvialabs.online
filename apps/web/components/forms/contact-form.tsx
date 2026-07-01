@@ -1,5 +1,6 @@
 "use client";
 
+import type { FormEvent } from "react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -25,7 +26,7 @@ export function ContactForm() {
     [],
   );
 
-  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("loading");
     setMessage("");

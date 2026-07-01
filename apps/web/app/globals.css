@@ -33,7 +33,9 @@ h4 {
 }
 
 .container {
+  margin-inline: auto;
   width: min(100%, 1280px);
+  padding-inline: 1.5rem;
 }
 
 .shadow-soft {

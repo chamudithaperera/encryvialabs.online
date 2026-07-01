@@ -81,17 +81,17 @@ export function DashboardShell() {
               "Blog drafts",
               "Analytics",
             ].map((item, index) => (
-              <a
+              <button
                 key={item}
-                href="#"
+                type="button"
                 className={cn(
-                  "flex items-center gap-3 rounded-2xl px-4 py-3 text-sm transition hover:bg-slate-100",
+                  "flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left text-sm transition hover:bg-slate-100",
                   index === 0 && "bg-brand-50 text-brand-700",
                 )}
               >
                 {index === 0 ? <LayoutDashboard className="h-4 w-4" /> : <LifeBuoy className="h-4 w-4" />}
                 {item}
-              </a>
+              </button>
             ))}
           </nav>
           <div className="mt-auto border-t border-border pt-5">

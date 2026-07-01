@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { navLinks, site } from "@/lib/site-data";
-import { siteUrl } from "@/lib/utils";
 
 export function SiteFooter() {
   return (
@@ -34,14 +33,14 @@ export function SiteFooter() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Contact</p>
           <div className="mt-4 space-y-3 text-sm text-slate-600">
             <p>
-              <a href={`mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@encryvialabs.online"}`} className="hover:text-ink">
+              <a href={`mailto:${process.env.CONTACT_TO_EMAIL || "hello@encryvialabs.online"}`} className="hover:text-ink">
                 hello@encryvialabs.online
               </a>
             </p>
             <p>encryvialabs.online</p>
             <p>White-space friendly, remote-first delivery.</p>
           </div>
-          <Link href={siteUrl("/contact")} className="mt-6 inline-flex text-sm font-medium text-brand-700 hover:text-brand-800">
+          <Link href="/contact" className="mt-6 inline-flex text-sm font-medium text-brand-700 hover:text-brand-800">
             Talk to Encryvia Labs
           </Link>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Float, OrbitControls, Sphere, Torus, useProgress } from "@react-three/drei";
+import { Float, OrbitControls } from "@react-three/drei";
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
@@ -54,11 +54,6 @@ function Scene() {
       <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
     </>
   );
-}
-
-function Loader() {
-  const progress = useProgress();
-  return <div className="text-sm text-slate-500">{progress.progress ? "Loading visual..." : "Preparing canvas..."}</div>;
 }
 
 export function Hero3D() {
