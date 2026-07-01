@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <rect x="48" y="48" width="1104" height="534" rx="40" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <circle cx="960" cy="188" r="136" fill="#DDE6FF" fill-opacity="0.55"/>
+  <circle cx="235" cy="448" r="104" fill="#D9F4EE" fill-opacity="0.7"/>
+  <path d="M129 185C216 110 316 76 454 76C621 76 764 146 855 265" stroke="#5970F3" stroke-width="18" stroke-linecap="round"/>
+  <path d="M250 310C350 240 471 204 611 204C763 204 870 253 1010 357" stroke="#49CBB3" stroke-width="14" stroke-linecap="round" opacity="0.8"/>
+  <rect x="90" y="92" width="440" height="302" rx="30" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="128" y="170" fill="#0F172A" font-size="54" font-family="Arial, Helvetica, sans-serif" font-weight="700">Encryvia Labs</text>
+  <text x="128" y="222" fill="#475569" font-size="26" font-family="Arial, Helvetica, sans-serif">Secure intelligence for modern digital products.</text>
+  <text x="128" y="278" fill="#64748B" font-size="22" font-family="Arial, Helvetica, sans-serif">Websites • Software • Mobile Apps • Cloud • Security • AI</text>
+  <rect x="128" y="316" width="184" height="50" rx="25" fill="#0F172A"/>
+  <text x="165" y="348" fill="#FFFFFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Book a discovery call</text>
+</svg>
