@@ -31,13 +31,13 @@ import {
   X,
   Zap,
 } from "lucide-react";
-import type { ComponentType, ReactNode } from "react";
+import type { ComponentType, MouseEvent as ReactMouseEvent, ReactNode, RefObject } from "react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type ScrollResult<T extends HTMLElement> = {
-  ref: React.RefObject<T | null>;
+  ref: RefObject<T>;
   isVisible: boolean;
 };
 
@@ -240,7 +240,7 @@ function Card3D({
 }) {
   const [transform, setTransform] = useState("perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)");
 
-  function handleMove(event: React.MouseEvent<HTMLDivElement>) {
+  function handleMove(event: ReactMouseEvent<HTMLDivElement>) {
     const rect = event.currentTarget.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width;
     const y = (event.clientY - rect.top) / rect.height;

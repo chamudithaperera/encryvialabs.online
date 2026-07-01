@@ -4,6 +4,7 @@ import globals from "globals";
 import reactHooks from "eslint-plugin-react-hooks";
 import react from "eslint-plugin-react";
 import jsxA11y from "eslint-plugin-jsx-a11y";
+import reactRefresh from "eslint-plugin-react-refresh";
 
 export default [
   {
@@ -40,6 +41,18 @@ export default [
       "@typescript-eslint/no-unused-vars": [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" },
+      ],
+    },
+  },
+  {
+    files: ["apps/web/components/**/*.{ts,tsx}"],
+    plugins: {
+      "react-refresh": reactRefresh,
+    },
+    rules: {
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
       ],
     },
   },
