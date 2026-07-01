@@ -1,0 +1,20 @@
+{
+  "name": "encryvia-labs",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "dev": "concurrently -n web,api -c blue,cyan \"pnpm --filter @encryvia/web dev\" \"pnpm --filter @encryvia/api dev\"",
+    "build": "pnpm --filter @encryvia/web build && pnpm --filter @encryvia/api build",
+    "start": "concurrently -n web,api -c blue,cyan \"pnpm --filter @encryvia/web start\" \"pnpm --filter @encryvia/api start\"",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
+  }
+}
