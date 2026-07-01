@@ -30,7 +30,7 @@ export function Button(props: ButtonProps | LinkProps) {
   if ("href" in props && props.href) {
     const { children, className, variant = "solid", href, ...rest } = props;
     const classes = cn(
-      "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2",
+      "inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2",
       styles[variant],
       className,
     );

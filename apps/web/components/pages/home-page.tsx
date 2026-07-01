@@ -4,13 +4,11 @@ import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
-  Box,
   Brain,
   ChevronDown,
   Code2,
   Cloud,
   Cpu,
-  Database,
   Github,
   Globe,
   Layers,
