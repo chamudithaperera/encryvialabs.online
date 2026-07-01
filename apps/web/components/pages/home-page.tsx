@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -471,10 +472,13 @@ export function HomePage() {
                 Let&apos;s discuss your project and explore how we can help you achieve your goals.
               </p>
               <div className="mt-10">
-                <Button href="/#contact" variant="outline" className="bg-white text-blue-600 shadow-2xl shadow-white/20 hover:bg-white/95">
+                <Link
+                  href="/#contact"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white px-8 py-4 text-lg font-semibold text-blue-600 shadow-2xl shadow-white/20 transition-all hover:-translate-y-1 hover:bg-white/95"
+                >
                   <span>Start Your Project</span>
                   <ArrowRight className="h-5 w-5" />
-                </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -530,7 +534,7 @@ export function HomePage() {
             </div>
 
             <div className="rounded-[2rem] border border-slate-200/80 bg-white p-8 shadow-2xl shadow-blue-500/5 lg:p-10">
-              <form className="space-y-6" onSubmit={(event) => event.preventDefault()}>
+              <form className="space-y-6">
                 <div className="grid gap-6 sm:grid-cols-2">
                   <label className="grid gap-2">
                     <span className="text-sm font-medium text-slate-700">Name</span>
