@@ -21,18 +21,18 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b transition-all",
-        scrolled ? "border-border/80 bg-white/95 backdrop-blur-xl shadow-sm" : "border-transparent bg-white/78 backdrop-blur-lg",
+        "sticky top-0 z-50 border-b border-black/5 transition-all",
+        scrolled ? "bg-black/70 text-white backdrop-blur-xl shadow-2xl" : "bg-transparent backdrop-blur-lg",
       )}
     >
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl border border-brand-100 bg-gradient-to-br from-brand-50 to-sun-50 text-sm font-semibold text-brand-800 shadow-sm">
+          <span className="grid h-10 w-10 place-items-center rounded-2xl border border-white/15 bg-black/90 text-sm font-semibold text-white shadow-sm">
             EL
           </span>
           <span className="flex flex-col leading-tight">
             <span className="font-semibold text-ink">{site.name}</span>
-            <span className="text-xs text-slate-500">AI-powered engineering studio</span>
+            <span className="text-xs text-slate-700">AI-powered engineering studio</span>
           </span>
         </Link>
 
@@ -41,7 +41,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-4 py-2 text-sm text-slate-600 transition hover:bg-brand-50 hover:text-brand-800"
+              className="rounded-full px-4 py-2 text-sm text-slate-700 transition hover:bg-black/5 hover:text-ink"
             >
               {item.label}
             </Link>
@@ -57,7 +57,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-gradient-to-br from-white to-brand-50 text-ink lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white/80 text-ink lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-label="Toggle navigation"
@@ -67,14 +67,14 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-border bg-white px-4 pb-5 lg:hidden">
+        <div className="border-t border-black/10 bg-white/95 px-4 pb-5 lg:hidden">
           <div className="container flex flex-col gap-2 pt-4">
             {navLinks.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-800"
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-black/5 hover:text-ink"
               >
                 {item.label}
               </Link>

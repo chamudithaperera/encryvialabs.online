@@ -13,10 +13,10 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(52, 176, 111, 0.12), transparent 24%),
-    radial-gradient(circle at top right, rgba(241, 143, 20, 0.12), transparent 20%),
-    radial-gradient(circle at bottom left, rgba(240, 94, 57, 0.08), transparent 22%),
-    #ffffff;
+    radial-gradient(circle at top center, rgba(250, 196, 92, 0.28), transparent 28%),
+    radial-gradient(circle at 20% 18%, rgba(122, 68, 255, 0.15), transparent 25%),
+    radial-gradient(circle at 78% 25%, rgba(248, 76, 54, 0.12), transparent 22%),
+    linear-gradient(180deg, #fae4a5 0%, #f8dc95 30%, #f4d481 100%);
   font-family: var(--font-body), sans-serif;
   color: #0f172a;
 }
@@ -44,7 +44,7 @@ h4 {
 }
 
 .shadow-lift {
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12), 0 18px 40px rgba(52, 176, 111, 0.08);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16), 0 24px 60px rgba(122, 68, 255, 0.14);
 }
 
 @media (prefers-reduced-motion: reduce) {
