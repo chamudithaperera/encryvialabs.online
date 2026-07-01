@@ -133,6 +133,9 @@ export function ContactForm() {
           {message || "We usually reply within 1 business day."}
         </p>
       </div>
+      <p className="text-xs text-slate-500">
+        Protected by validation, a honeypot field, and server-side rate limiting.
+      </p>
     </form>
   );
 }
