@@ -14,7 +14,7 @@ import {
 
 export const site = {
   name: "Encryvia Labs",
-  tagline: "Secure intelligence for modern digital products.",
+  tagline: "Protect and power your digital business today.",
   description:
     "Encryvia Labs designs and builds modern websites, software platforms, mobile apps, cloud systems, secure databases, and AI-powered solutions for ambitious businesses.",
 };

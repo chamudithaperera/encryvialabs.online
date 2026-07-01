@@ -41,7 +41,12 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-4 py-2 text-sm text-slate-700 transition hover:bg-black/5 hover:text-ink"
+              className={cn(
+                "rounded-full px-4 py-2 text-sm transition",
+                scrolled
+                  ? "text-white/75 hover:bg-white/10 hover:text-white"
+                  : "text-slate-700 hover:bg-black/5 hover:text-ink",
+              )}
             >
               {item.label}
             </Link>
@@ -57,7 +62,10 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white/80 text-ink lg:hidden"
+          className={cn(
+            "inline-flex h-11 w-11 items-center justify-center rounded-full border lg:hidden",
+            scrolled ? "border-white/10 bg-white/10 text-white" : "border-black/10 bg-white/80 text-ink",
+          )}
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-label="Toggle navigation"
@@ -67,14 +75,17 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="border-t border-black/10 bg-white/95 px-4 pb-5 lg:hidden">
+        <div className={cn("border-t px-4 pb-5 lg:hidden", scrolled ? "border-white/10 bg-black/95" : "border-black/10 bg-white/95")}>
           <div className="container flex flex-col gap-2 pt-4">
             {navLinks.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-black/5 hover:text-ink"
+                className={cn(
+                  "rounded-2xl px-4 py-3 text-sm font-medium",
+                  scrolled ? "text-white/75 hover:bg-white/10 hover:text-white" : "text-slate-700 hover:bg-black/5 hover:text-ink",
+                )}
               >
                 {item.label}
               </Link>
