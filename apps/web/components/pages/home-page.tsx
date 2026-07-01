@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -20,6 +19,7 @@ import {
   Workflow,
   Zap,
 } from "lucide-react";
+import type { ComponentType } from "react";
 import { Button } from "@/components/ui/button";
 
 const heroStats = [
@@ -159,7 +159,7 @@ function SectionHeading({
   centered = true,
 }: {
   eyebrow: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: ComponentType<{ className?: string }>;
   title: string;
   accent: string;
   description: string;
@@ -471,7 +471,7 @@ export function HomePage() {
                 Let&apos;s discuss your project and explore how we can help you achieve your goals.
               </p>
               <div className="mt-10">
-                <Button href="/#contact" className="bg-white text-blue-600 shadow-2xl shadow-white/20 hover:bg-white/95">
+                <Button href="/#contact" variant="outline" className="bg-white text-blue-600 shadow-2xl shadow-white/20 hover:bg-white/95">
                   <span>Start Your Project</span>
                   <ArrowRight className="h-5 w-5" />
                 </Button>

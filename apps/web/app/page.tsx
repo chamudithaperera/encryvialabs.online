@@ -2,9 +2,9 @@ import { pageMetadata } from "@/lib/seo";
 import { HomePage } from "@/components/pages/home-page";
 
 export const metadata = pageMetadata({
-  title: "Encryvia Labs | Secure intelligence for modern digital products",
+  title: "Encryvia Labs - Innovative Digital Solutions",
   description:
-    "AI-powered websites, software, mobile apps, cloud systems, databases, and security solutions built with a premium white-first design system.",
+    "Encryvia Labs - Modern technology solutions for businesses. We build high-quality websites, custom software, mobile apps, SaaS platforms, and AI-powered solutions.",
   path: "/",
 });
 
