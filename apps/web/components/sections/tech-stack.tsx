@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export function TechStackGrid() {
   return (
-    <section className="bg-panel py-24">
+    <section className="bg-gradient-to-b from-brand-50/20 to-white py-24">
       <div className="container">
         <SectionHeading
           eyebrow="Capabilities"

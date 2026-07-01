@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export function BlogGrid() {
   return (
-    <section className="bg-panel py-24">
+    <section className="bg-gradient-to-b from-brand-50/15 to-white py-24">
       <div className="container">
         <SectionHeading
           eyebrow="Blog"

@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export function ServiceGrid() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-gradient-to-b from-white to-brand-50/15 py-24">
       <div className="container">
         <SectionHeading
           eyebrow="Services"

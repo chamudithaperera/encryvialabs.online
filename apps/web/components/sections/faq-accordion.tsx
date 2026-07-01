@@ -10,7 +10,7 @@ export function FAQAccordion() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="bg-white py-24">
+    <section className="bg-gradient-to-b from-white to-sun-50/10 py-24">
       <div className="container">
         <SectionHeading
           eyebrow="FAQ"
