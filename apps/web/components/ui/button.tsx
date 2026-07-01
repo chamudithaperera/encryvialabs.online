@@ -20,9 +20,9 @@ type LinkProps = CommonProps &
   };
 
 const styles = {
-  solid: "bg-ink text-white shadow-soft hover:-translate-y-0.5 hover:shadow-lift",
+  solid: "bg-brand-700 text-white shadow-soft hover:-translate-y-0.5 hover:bg-brand-800 hover:shadow-lift",
   outline: "border border-border bg-white text-ink hover:border-brand-300 hover:bg-brand-50",
-  ghost: "bg-transparent text-ink hover:bg-slate-100",
+  ghost: "bg-transparent text-ink hover:bg-brand-50",
 };
 
 export function Button(props: ButtonProps | LinkProps) {

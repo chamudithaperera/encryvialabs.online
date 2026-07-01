@@ -11,7 +11,7 @@ export function GlassCard({
   return (
     <div
       className={cn(
-        "rounded-3xl border border-white/50 bg-white/70 p-6 shadow-glass backdrop-blur-xl",
+        "rounded-[2rem] border border-white/65 bg-white/76 p-6 shadow-glass backdrop-blur-xl",
         className,
       )}
     >
