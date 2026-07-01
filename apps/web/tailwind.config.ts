@@ -147,7 +147,7 @@ export default {
         500: "500px",
       },
       transformStyle: {
-        3d: "preserve-3d",
+        "3d": "preserve-3d",
       },
       backfaceVisibility: {
         hidden: "hidden",
