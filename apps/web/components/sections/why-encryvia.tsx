@@ -36,8 +36,8 @@ export function WhyEncryvia() {
             })}
           </div>
           <motion.div style={{ y }} className="relative">
-            <GlassCard className="sticky top-28 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-teal-50" />
+          <GlassCard className="sticky top-28 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-sun-50/80" />
               <div className="relative">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-700">Brand logic</p>
                 <h3 className="mt-4 text-2xl font-semibold text-ink">Encryvia signals secure intelligence from the first impression.</h3>

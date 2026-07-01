@@ -14,12 +14,12 @@ function Scene() {
     <>
       <ambientLight intensity={1.4} />
       <directionalLight position={[2, 3, 4]} intensity={2.2} />
-      <directionalLight position={[-3, -2, -1]} intensity={0.8} color="#7c93ff" />
+      <directionalLight position={[-3, -2, -1]} intensity={0.8} color="#f18f14" />
       <Float speed={1.2} rotationIntensity={0.45} floatIntensity={0.6}>
         <mesh position={[-1.4, 0.2, 0.4]}>
           <icosahedronGeometry args={[0.8, 1]} />
           <meshPhysicalMaterial
-            color="#dbe4ff"
+            color="#8fe3b1"
             transparent
             opacity={0.52}
             roughness={0.12}
@@ -32,14 +32,14 @@ function Scene() {
       <Float speed={1.6} rotationIntensity={0.5} floatIntensity={0.7}>
         <mesh position={[1.2, -0.2, 0.1]}>
           <torusKnotGeometry args={[0.58, 0.18, 96, 16]} />
-          <meshStandardMaterial color="#5970f3" metalness={0.25} roughness={0.2} />
+          <meshStandardMaterial color="#f18f14" metalness={0.35} roughness={0.18} />
         </mesh>
       </Float>
       <Float speed={1.4} rotationIntensity={0.3} floatIntensity={0.5}>
         <mesh position={[0.1, 1.15, -0.2]}>
           <sphereGeometry args={[0.36, 48, 48]} />
           <meshPhysicalMaterial
-            color="#49cbb3"
+            color="#f05e39"
             transparent
             opacity={0.75}
             roughness={0.15}
@@ -49,7 +49,7 @@ function Scene() {
       </Float>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1.1, 0]}>
         <ringGeometry args={[1.25, 1.65, 64]} />
-        <meshBasicMaterial color="#dbe4ff" transparent opacity={0.35} />
+        <meshBasicMaterial color="#dcf9e8" transparent opacity={0.38} />
       </mesh>
       <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
     </>
@@ -75,8 +75,8 @@ export function Hero3D() {
           transition={{ duration: 0.6 }}
           className="relative z-10 max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-brand-100 bg-white px-4 py-2 text-sm text-slate-600 shadow-sm">
-            <Sparkles className="h-4 w-4 text-brand-600" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-sun-100 bg-sun-50 px-4 py-2 text-sm text-slate-700 shadow-sm">
+            <Sparkles className="h-4 w-4 text-sun-600" />
             AI-powered websites, software, mobile apps, cloud, and security
           </div>
           <h1 className="mt-6 text-5xl font-semibold tracking-tight text-ink sm:text-6xl lg:text-7xl">
@@ -98,7 +98,7 @@ export function Hero3D() {
           <div className="mt-10 grid gap-3 sm:grid-cols-2">
             {trustBullets.slice(0, 4).map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-2xl border border-border bg-white/80 p-4 shadow-sm">
-                <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-teal-600" />
+                <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-brand-700" />
                 <p className="text-sm leading-6 text-slate-600">{item}</p>
               </div>
             ))}
@@ -108,12 +108,12 @@ export function Hero3D() {
         <div className="relative">
           <div className="absolute -left-6 top-8 hidden lg:block">
             <GlassCard className="max-w-64 animate-float-slow">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">Delivery signal</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sun-700">Delivery signal</p>
               <p className="mt-2 text-sm text-slate-700">Secure, readable systems with practical AI where it actually helps.</p>
             </GlassCard>
           </div>
           <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white shadow-lift">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-slate-50" />
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-sun-50/70" />
             <div className="relative aspect-[4/5] min-h-[520px] p-4 sm:p-6">
               {supportsWebGL && !reducedMotion ? (
                 <Canvas camera={{ position: [0, 0, 4.2], fov: 45 }}>

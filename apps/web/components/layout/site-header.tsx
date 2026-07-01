@@ -22,12 +22,12 @@ export function SiteHeader() {
     <header
       className={cn(
         "sticky top-0 z-50 border-b transition-all",
-        scrolled ? "border-border/80 bg-white/95 backdrop-blur-xl shadow-sm" : "border-transparent bg-white/75 backdrop-blur-lg",
+        scrolled ? "border-border/80 bg-white/95 backdrop-blur-xl shadow-sm" : "border-transparent bg-white/78 backdrop-blur-lg",
       )}
     >
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl border border-brand-100 bg-brand-50 text-sm font-semibold text-brand-700 shadow-sm">
+          <span className="grid h-10 w-10 place-items-center rounded-2xl border border-brand-100 bg-gradient-to-br from-brand-50 to-sun-50 text-sm font-semibold text-brand-800 shadow-sm">
             EL
           </span>
           <span className="flex flex-col leading-tight">
@@ -41,7 +41,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-4 py-2 text-sm text-slate-600 transition hover:bg-slate-100 hover:text-ink"
+              className="rounded-full px-4 py-2 text-sm text-slate-600 transition hover:bg-brand-50 hover:text-brand-800"
             >
               {item.label}
             </Link>
@@ -57,7 +57,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-ink lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-gradient-to-br from-white to-brand-50 text-ink lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-label="Toggle navigation"
@@ -74,7 +74,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-100"
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-800"
               >
                 {item.label}
               </Link>
