@@ -7,7 +7,7 @@ import { site } from "@/lib/site-data";
 import { siteUrl } from "@/lib/utils";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl("/")),
@@ -16,6 +16,16 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  keywords: [
+    "software development",
+    "web development",
+    "mobile apps",
+    "SaaS",
+    "AI solutions",
+    "custom software",
+    "digital transformation",
+  ],
+  authors: [{ name: site.name }],
   icons: {
     icon: "/favicon.svg",
   },
