@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -16,7 +15,6 @@ import {
   Lock,
   Mail,
   MapPin,
-  Menu,
   Move3d,
   Palette,
   Phone,
@@ -26,7 +24,6 @@ import {
   Sparkles,
   Twitter,
   Users,
-  X,
   Zap,
 } from "lucide-react";
 import type { ComponentType, MouseEvent as ReactMouseEvent, ReactNode, RefObject } from "react";
