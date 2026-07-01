@@ -1,3 +1,4 @@
+import React from "react";
 import { Hero3D } from "@/components/sections/hero-3d";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { ServiceGrid } from "@/components/sections/service-grid";
