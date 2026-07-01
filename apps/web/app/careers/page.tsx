@@ -1,7 +1,6 @@
 import { pageMetadata } from "@/lib/seo";
 import { careers } from "@/lib/site-data";
 import { GlassCard } from "@/components/ui/glass-card";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { JobApplicationForm } from "@/components/forms/job-application-form";
 
 export const metadata = pageMetadata({

@@ -32,7 +32,7 @@ router.post("/contact", contactLimiter, async (req, res) => {
       ok: true,
       message: "Your enquiry has been received. We will get back to you soon.",
     });
-  } catch (error) {
+  } catch (_error) {
     return res.status(500).json({
       ok: false,
       error: "Something went wrong while submitting the form.",

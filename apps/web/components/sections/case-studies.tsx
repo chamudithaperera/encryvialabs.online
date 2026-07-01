@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
